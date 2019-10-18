@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/jsdom.css">
 
 </head>
 
@@ -101,7 +102,7 @@
             <!--#endregion-->
             <!--#region Conteudo Principal-->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3
                     border-bottom">
                     <h1 class="h2">Exercicio 02</h1>
                     <nav aria-label="breadcrumb">
@@ -111,6 +112,30 @@
                         </ol>
                     </nav>
                 </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Crie um algoritmo que leia dois valores inteiros distintos, ao final mostre qual é maior.</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5 col-lg-4">
+                            <label for="valor1">Valor 1: </label>
+                            <input id="valor1" type="number" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 col-md-5 col-lg-4">
+                            <label for="valor2">Valor 2:</label>
+                            <input id="valor2" type="number" class="form-control" required>
+                        </div>
+                        <div class="col-sm-12 pt-29 col-md-2 col-lg-2">
+                            <buttom type="buttom" class="btn btn-success" onclick="testaValorMaior()">Simular</buttom>
+                        </div>
+
+                    </div>
+                    <div class="row invisible" id="mensagemResultado">
+                    </div>
+                </form>
             </main>
             <!--#endregion-->
         </div>
@@ -120,9 +145,10 @@
         crossorigin="anonymous"></script>
     <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="assets/js/exercicio06.js"></script>
     <script>feather.replace()</script>
-            
-          
+
+
 </body>
 
 </html>
